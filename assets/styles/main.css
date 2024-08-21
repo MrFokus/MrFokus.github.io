@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Inter';
+        font-weight: 100 900;
+        src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    }
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
