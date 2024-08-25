@@ -11,8 +11,9 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'black-primary': '#181818',
-      
+      'background': 'var(--background)',
+      'primary': 'var(--purple)',
+      'text-primary': 'var(--text-primary)',
     }
   },
   darkMode:'selector',

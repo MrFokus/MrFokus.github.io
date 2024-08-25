@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --background: white;
+    --primary: #5301DE;
+    --text-primary: #181818;
+}
+html.dark{
+    background-color: var(--background);
+}
+html.dark:root{
+    --background: #181818;
+    --primary: #5301DE;
+    --text-primary: white;
+}
+
 @layer base {
     @font-face {
         font-family: 'Inter';
@@ -11,4 +25,5 @@
 }
 *{
     font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
 }
