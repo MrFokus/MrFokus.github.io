@@ -14,6 +14,10 @@ module.exports = {
       'background': 'var(--background)',
       'primary': 'var(--purple)',
       'text-primary': 'var(--text-primary)',
+    },
+    fontSize: {
+      't-m': ['14px', '120%'],
+      'h1-m':['20px','120%']
     }
   },
   darkMode:'selector',
