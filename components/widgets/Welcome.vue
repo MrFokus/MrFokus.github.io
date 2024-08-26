@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FillingText from '../features/FillingText.vue';
 import SliderGallerySkills from '../features/SliderGallerySkills.vue';
 import Thinker from '@/assets/img/thinker.png'
 </script>
@@ -10,6 +11,11 @@ import Thinker from '@/assets/img/thinker.png'
             <p class=" text-t-m">Герман Глубоков</p>
         </div>
         <SliderGallerySkills :view="5" :skills-list="[Thinker,Thinker,Thinker,Thinker,Thinker]"/>
+        <div class="title">
+            <FillingText>
+                Я — Герман, и я программист! 
+            </FillingText>
+        </div>
     </section>
 </template>
 
@@ -17,4 +23,5 @@ import Thinker from '@/assets/img/thinker.png'
 .welcome {
     background: linear-gradient(0deg, #5301DE 0%, #41158C 100%);
 }
+
 </style>
