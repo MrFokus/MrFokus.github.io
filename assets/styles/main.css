@@ -25,6 +25,21 @@ html.dark:root {
 
 }
 
+.white-theme {
+    --background: #181818;
+    --primary: #5301DE;
+    --text-primary: white;
+    --card-skills-bg: white;
+}
+
+.dark-theme {
+    --background: #181818;
+    --primary: #5301DE;
+    --text-primary: white;
+    --card-skills-bg: white;
+
+}
+
 
 * {
     padding: 0;
@@ -35,7 +50,7 @@ html.dark:root {
     color: var(--text-primary);
     box-sizing: border-box;
     text-decoration: none;
-    
+
 }
 
 div,
@@ -51,7 +66,7 @@ html.dark {
 }
 
 
-.point{
+.point {
     display: flex;
     aspect-ratio: 1/1;
     background-color: var(--text-primary);
@@ -59,9 +74,16 @@ html.dark {
     border-radius: 100%;
     height: min-content;
 }
-.card-skill{
+
+.card-skill {
     background-color: var(--card-skills-bg);
     border-radius: 20px;
     padding: 8px;
     aspect-ratio: 1;
+}
+.card-skill img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
 }
