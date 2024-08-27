@@ -19,9 +19,9 @@ import Saas from '@/assets/img/saas.png'
                 <FillingText class="white-theme text-h1-m">
                     Я — Герман, и я программист!
                 </FillingText>
-                <p class="white-theme text-h1-m">Программист с двухлетним стажем, создаю эффективные решения
+                <h1 class="white-theme text-h1-m">Программист с двухлетним стажем, создаю эффективные решения
                     и качественные приложения. 
-                </p>
+                </h1>
             </div>
             <img class="w-[194px] h-fit aspect-square" :src="Thinker" alt="">
         </div>

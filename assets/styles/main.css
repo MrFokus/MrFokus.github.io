@@ -47,6 +47,7 @@ html.dark:root {
     border: none;
     outline: none;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
     color: var(--text-primary);
     box-sizing: border-box;
     text-decoration: none;
@@ -86,4 +87,17 @@ html.dark {
     height: 100%;
     object-fit: contain;
     object-position: center center;
+}
+.marker-list li{
+    display: flex;
+}
+.marker-list li::before{
+    margin: 8px 16px 0 0;
+    content: '';
+    display: flex;
+    aspect-ratio: 1/1;
+    background-color: var(--text-primary);
+    min-width: 8px;
+    border-radius: 100%;
+    height: min-content;
 }

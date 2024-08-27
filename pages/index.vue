@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import AboutMe from '~/components/widgets/AboutMe.vue';
+import Stack from '~/components/widgets/Stack.vue';
 import Welcome from '~/components/widgets/Welcome.vue';
 
 
@@ -7,6 +9,8 @@ import Welcome from '~/components/widgets/Welcome.vue';
 <template>
     <main>
         <Welcome/>
+        <AboutMe/>
+        <Stack/>
     </main>
 </template>
 
