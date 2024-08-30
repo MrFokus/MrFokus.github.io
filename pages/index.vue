@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AboutMe from '~/components/widgets/AboutMe.vue';
+import Projects from '~/components/widgets/Projects.vue';
 import Stack from '~/components/widgets/Stack.vue';
 import Welcome from '~/components/widgets/Welcome.vue';
 
@@ -11,6 +12,7 @@ import Welcome from '~/components/widgets/Welcome.vue';
         <Welcome/>
         <AboutMe/>
         <Stack/>
+        <Projects/>
     </main>
 </template>
 
