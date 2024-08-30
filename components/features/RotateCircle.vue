@@ -23,16 +23,18 @@ function radianPositionDegree(position: number, N: number, offset: number = 0): 
     return position * (2 * Math.PI / N) - 0.5 * Math.PI + offset
 }
 
-function setPositionElement(degeree: number, element: HTMLElement, radius: number): void {
+function setPositionElement(degeree: number, element: HTMLElement, container: HTMLElement): void {
     const elRect = element.getBoundingClientRect()
-    element.style.top = (radius * Math.sin(degeree) - elRect.height / 2) + 'px'
-    element.style.left = (radius * Math.cos(degeree) - elRect.width / 2) + 'px'
+    const width = (container.getBoundingClientRect().width / 2) - element.getBoundingClientRect().width/2
+    const height = (container.getBoundingClientRect().height / 2) - element.getBoundingClientRect().height/2
+    element.style.top = (height * Math.sin(degeree) - elRect.height / 2) + 'px'
+    element.style.left = (width * Math.cos(degeree) - elRect.width / 2) + 'px'
 }
 
 function setCord(offset?: number) {
     items.value?.forEach((el, index) => {
         if (containerRef.value) {
-            setPositionElement(radianPositionDegree(index, items.value?.length!!, offset), el, (containerRef.value.getBoundingClientRect().width / 2) - el.getBoundingClientRect().width/2)
+            setPositionElement(radianPositionDegree(index, items.value?.length!!, offset), el, containerRef.value)
         }
     })
 }
