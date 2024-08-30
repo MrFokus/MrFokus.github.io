@@ -3,8 +3,6 @@ import type { Project } from '~/types/project';
 const props = defineProps<{
     card: Project
 }>()
-console.log(props);
-
 </script>
 
 <template>
