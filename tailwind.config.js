@@ -12,7 +12,7 @@ module.exports = {
     extend: {},
     colors: {
       'background': 'var(--background)',
-      'primary': 'var(--purple)',
+      'primary': 'var(--primary)',
       'text-primary': 'var(--text-primary)',
     },
     fontSize: {
