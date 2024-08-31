@@ -6,18 +6,20 @@ import { myLife } from '~/constants/infoAboutMe';
 
 <template>
     <section class="about-me flex-col gap-8">
-        <div class="flex-col gap-4">
-            <p class="text-h1-m">
+        <div class="flex-col gap-4 lg:flex-row lg:justify-between">
+            <p class="text-h1">
                 Немного обо мне
             </p>
-            <h2 class="text-h1-m">
+            <h2 class="text-h2 lg:w-[50%]">
                 Мои цели — создавать универсальный софт, который удобен и прост в использовании
             </h2>
         </div>
-        <ul class="flex flex-col gap-4 marker-list ">
-            <li class="text-t-m" v-for="el in myLife">{{el}}</li>
-        </ul>
-        <img src="@/assets/img/hi.png" alt="">
+        <div class="flex-col gap-4 lg:lg:flex-row lg:justify-between">
+            <ul class="flex flex-col gap-4 marker-list ">
+                <li class="text-t" v-for="el in myLife">{{el}}</li>
+            </ul>
+            <img class=" lg:w-[50%]" src="@/assets/img/hi.png" alt="">
+        </div>
     </section>
 </template>
 

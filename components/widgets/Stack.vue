@@ -6,14 +6,16 @@ import RotateCircle from '../features/RotateCircle.vue';
 </script>
 
 <template>
-    <section class="my-stack gap-8 flex-col">
-        <p class="text-h1-m">
-            Мой стек
-        </p>
-        <ul class="flex flex-col gap-4 marker-list ">
-            <li class="text-t-m" v-for="s in stack">{{ s }}</li>
-        </ul>
-        <RotateCircle direction="left" :speed="10">
+    <section class="my-stack gap-8 flex-col lg:flex-row lg:justify-between lg:items-center">
+        <div class="flex-col gap-8 lg:gap-11 lg:w-[50%]">
+            <p class="text-h1">
+                Мой стек
+            </p>
+            <ul class="flex flex-col gap-4 marker-list ">
+                <li class="text-t" v-for="s in stack">{{ s }}</li>
+            </ul>
+        </div>
+        <RotateCircle class="lg:w-[45%] h-fit" direction="left" :speed="10">
             <template v-slot:center>
                 <div class="card-skill">
                     <img src="@/assets/img/nuxt.svg" alt="">
@@ -50,5 +52,11 @@ import RotateCircle from '../features/RotateCircle.vue';
 .card-skill{
     width: 80px;
     height: 80px;
+}
+@media screen(lg) {
+    .card-skill{
+    width: 120px;
+    height: 120px;
+}
 }
 </style>

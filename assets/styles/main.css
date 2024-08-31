@@ -8,6 +8,25 @@
         font-weight: 100 900;
         src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
     }
+    .text-h1,.text-h2{
+        @apply text-[20px] leading-[120%];
+    }
+    .text-t{
+        @apply text-[14px] leading-[140%];
+    }
+    @media screen(sm) {
+        .text-h1{
+            @apply text-[48px];
+
+        }
+        .text-t{
+            @apply text-[20px];
+
+        }
+        .text-h2{
+            @apply text-[36px];
+        }
+    }
 }
 
 :root {
@@ -111,3 +130,5 @@ html.dark {
     aspect-ratio: 1;
     width: 30px;
 }
+
+

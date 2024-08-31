@@ -9,12 +9,12 @@ const props = defineProps<{
     <div class="card-project flex flex-col gap-[18px] relative">
         <img class=" project-preview aspect-[16/10] rounded-[20px] object-cover" :src="card.img" :alt="card.name">
         <div class="flex-col gap-3">
-            <p class="name text-h1-m">{{ card.name }}</p>
+            <p class="name text-h2">{{ card.name }}</p>
             <div class="flex-wrap gap-y-2 gap-x-4">
-                <p v-if="card.description" class="description text-t-m">{{ card.description }}</p>
-                <nuxt-link v-if="card.link" class="text-t-m underline cursor-pointer" :to="card.link">Ссылка на
+                <p v-if="card.description" class="description text-t">{{ card.description }}</p>
+                <nuxt-link v-if="card.link" class="text-t underline cursor-pointer" :to="card.link">Ссылка на
                     сайт</nuxt-link>
-                <nuxt-link v-if="card.git" class="text-t-m underline cursor-pointer" :to="card.git">Ссылка на
+                <nuxt-link v-if="card.git" class="text-t underline cursor-pointer" :to="card.git">Ссылка на
                     репозиторий</nuxt-link>
             </div>
         </div>

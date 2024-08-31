@@ -16,8 +16,8 @@ module.exports = {
       'text-primary': 'var(--text-primary)',
     },
     fontSize: {
-      't-m': ['14px', '140%'],
-      'h1-m':['20px','120%']
+      // 't-m': ['14px', '140%'],
+      // 'h1-m':['20px','120%']
     }
   },
   darkMode:'selector',
