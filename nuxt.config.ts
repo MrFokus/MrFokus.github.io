@@ -9,8 +9,6 @@ export default defineNuxtConfig({
       {
         id: '98214979',
         webvisor: true,
-        consoleLog: true,
-        clickmap: true,
       }
     ],
   ],
