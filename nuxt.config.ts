@@ -7,8 +7,10 @@ export default defineNuxtConfig({
     [
       'yandex-metrika-module-nuxt3',
       {
-        id: 98214979,
-        webvisor: true,
+        defer: true,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
       }
     ],
   ],
