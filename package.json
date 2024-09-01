@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "latest",
+    "yandex-metrika-module-nuxt3": "^1.5.3"
   }
 }
