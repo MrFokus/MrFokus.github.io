@@ -9,9 +9,15 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "overrides": {
+    "vue": "latest"
+  },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.4",
     "nuxt": "^3.12.4",
+    "nuxt-svgo": "^4.0.4",
+    "pinia": "^2.2.2",
     "vue": "latest",
     "yandex-metrika-module-nuxt3": "^1.5.3"
   }

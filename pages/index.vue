@@ -5,7 +5,6 @@ import Projects from '~/components/widgets/Projects.vue';
 import Stack from '~/components/widgets/Stack.vue';
 import Welcome from '~/components/widgets/Welcome.vue';
 
-
 </script>
 
 <template>

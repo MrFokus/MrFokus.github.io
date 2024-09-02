@@ -1,16 +1,12 @@
 <script lang="ts" setup>
+import { useThemeStore } from './store/theme';
 const html = document.querySelector('html')
-const changeDark = ref<boolean>(false)
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-  changeDark.value = event.matches
-});
+const themeStore = useThemeStore()
 onMounted(() => {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    changeDark.value = true
-  }
+  themeStore.currentTheme()
 })
-watch(changeDark, () => {
-  if (changeDark.value)
+watch(() => themeStore.isDark, () => {
+  if (themeStore.isDark)
     html?.classList.add('dark')
   else
     html?.classList.remove('dark')
@@ -18,7 +14,7 @@ watch(changeDark, () => {
 </script>
 
 <template>
-  
+
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
