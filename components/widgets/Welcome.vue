@@ -33,9 +33,9 @@ const themeStore = useThemeStore()
         <div class="gap-6 flex-col items-center py-8 lg:flex-row">
             <div class="title flex-col gap-4">
                 <FillingText class="white-theme text-h2">
-                    Я — Герман, и я программист!
+                    Я — Герман, давай знакомиться!
                 </FillingText>
-                <h1 class="white-theme text-h1">Программист с двухлетним стажем, создаю эффективные решения
+                <h1 class="white-theme text-h1">Фронтендер с двухлетним стажем, создаю эффективные решения
                     и качественные приложения.
                 </h1>
             </div>
