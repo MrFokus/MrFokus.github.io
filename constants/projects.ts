@@ -31,10 +31,22 @@ export const projects:Project[] = [
         isLock:true
     },
     {
-        name: 'Мототека',
-        img: '/projects/mototeka.png',
-        description: "В данном сервисе доступна информация о большинстве мотоциклов",
+        name: 'Фонд развития промышленности',
+        img: '/projects/frplo.png',
+        link:'https://frplo.admlr.lipetsk.ru/',
+        isLock:true
+    },
+    {
+        name: 'Управление здравоохранением Липецкой области',
+        img: '/projects/uzlo.png',
+        isLock:true,
         inProcess:true
     },
+    // {
+    //     name: 'Мототека',
+    //     img: '/projects/mototeka.png',
+    //     description: "В данном сервисе доступна информация о большинстве мотоциклов",
+    //     inProcess:true
+    // },
 ]
 
