@@ -37,7 +37,7 @@ export const projects:Project[] = [
         isLock:true
     },
     {
-        name: 'Управление здравоохранением Липецкой области',
+        name: 'Управление здравоохранения Липецкой области',
         img: '/projects/uzlo.png',
         isLock:true,
         inProcess:true
